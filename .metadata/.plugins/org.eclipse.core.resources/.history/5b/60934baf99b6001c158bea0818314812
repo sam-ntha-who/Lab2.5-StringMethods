@@ -1,0 +1,47 @@
+import java.util.Scanner;
+
+public class StringLab {
+
+	public static void main(String[] args) {
+
+		System.out.println("Please enter a word (first letter lowercase please):");
+		Scanner scnr = new Scanner(System.in);
+		String word = scnr.nextLine();
+		capitalizeWord(word);
+
+		System.out.println("Enter a phrase that includes 'Waldo' please:");
+		String phrase = scnr.nextLine();
+		wheresWaldo(phrase);
+
+		System.out.println("Enter a word:");
+		String firstWord = scnr.nextLine();
+		System.out.println("Enter another word:");
+		String secondWord = scnr.nextLine();
+		firstThingsFirst(firstWord, secondWord);
+	}
+
+	public static void capitalizeWord(String word) {
+		word = word.substring(0, 1).toUpperCase() + word.substring(1).toLowerCase();
+		System.out.println(word);
+
+	}
+
+	public static void wheresWaldo(String phrase) {
+		int index = phrase.indexOf("Waldo");
+		System.out.println("Waldo appears at character number " + index);
+
+	}
+
+	public static void firstThingsFirst(String a, String b) {
+
+		int compare = a.compareToIgnoreCase(b);
+		if (compare < 0) {
+			System.out.println(a + " " + b);
+		} else if (compare > 0) {
+			System.out.println(b + " " + a);
+		} else {
+			System.out.println("Your words are the same!");
+		}
+
+	}
+}
