@@ -45,7 +45,11 @@ public class StringLab {
 		String letterGetter = scnr.nextLine();
 		StringMethods.letterize(letterGetter);
 
-			
+		// camelCase!
+		System.out.println("Enter a phrase:");
+		String notCamelCase = scnr.nextLine();
+		StringMethods.camelCase(notCamelCase);
+		
 		scnr.close();
 	}
 

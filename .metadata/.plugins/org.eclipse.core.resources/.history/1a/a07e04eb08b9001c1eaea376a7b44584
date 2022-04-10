@@ -23,7 +23,7 @@ public class StringLab {
 		String secondWord = scnr.nextLine();
 		StringMethods.firstThingsFirst(firstWord, secondWord);
 
-		// backwards words
+		// backwords words
 		System.out.println("Enter a word you would like to see backwards:");
 		String regularDegular = scnr.nextLine();
 		StringMethods.reverse(regularDegular);
@@ -45,7 +45,6 @@ public class StringLab {
 		String letterGetter = scnr.nextLine();
 		StringMethods.letterize(letterGetter);
 
-			
 		scnr.close();
 	}
 
