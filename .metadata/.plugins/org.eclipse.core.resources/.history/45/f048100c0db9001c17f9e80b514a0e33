@@ -9,28 +9,24 @@ public class StringLab {
 		// capitalize the word
 		System.out.println("Please enter a word (first letter lowercase please):");
 		String word = scnr.nextLine();
-		String wordCap =StringMethods.capitalizeWord(word);
-		System.out.println(wordCap);
-		
+		StringMethods.capitalizeWord(word);
+
 		// where's Waldo
 		System.out.println("Enter a phrase that includes 'Waldo' please:");
 		String phrase = scnr.nextLine();
-		int waldoIndex = StringMethods.wheresWaldo(phrase);
-		System.out.println(waldoIndex);
+		StringMethods.wheresWaldo(phrase);
 
-		// alphabetical order first things first
+		// alphabetical order
 		System.out.println("Enter a word:");
 		String firstWord = scnr.nextLine();
 		System.out.println("Enter another word:");
 		String secondWord = scnr.nextLine();
-		String alphaBeta = StringMethods.firstThingsFirst(firstWord, secondWord);
-		System.out.println(alphaBeta);
+		StringMethods.firstThingsFirst(firstWord, secondWord);
 
 		// backwards words
 		System.out.println("Enter a word you would like to see backwards:");
 		String regularDegular = scnr.nextLine();
-		String backWards = StringMethods.reverse(regularDegular);
-		System.out.println(backWards);
+		StringMethods.reverse(regularDegular);
 
 		// which word is longer?
 		System.out.println("Enter a word:");
@@ -42,8 +38,7 @@ public class StringLab {
 		// after math
 		System.out.println("Give us a phrase that includes 'math':");
 		String mathPhrase = scnr.nextLine();
-		String afterMath = StringMethods.afterMath(mathPhrase);
-		System.out.println(afterMath);
+		StringMethods.afterMath(mathPhrase);
 
 		// letterize the word in an array
 		System.out.println("Enter a word:");

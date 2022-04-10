@@ -9,33 +9,32 @@ public class StringMethods {
 
 	}
 
-	public static int wheresWaldo(String phrase) {
+	public static void wheresWaldo(String phrase) {
 
 		int index = phrase.indexOf("Waldo");
-		return index;
+		System.out.println("Waldo appears at character number " + index);
 
 	}
 
-	public static String firstThingsFirst(String a, String b) {
-		String first; 
+	public static void firstThingsFirst(String a, String b) {
+
 		int alphaBeta = a.compareToIgnoreCase(b);
 		if (alphaBeta < 0) {
-			first = a + " " + b;
+			System.out.println(a + " " + b);
 		} else if (alphaBeta > 0) {
-			first = b + " " + a;
+			System.out.println(b + " " + a);
 		} else {
-			first = "Your words are the same!";
+			System.out.println("Your words are the same!");
 		}
-		return first;
+
 	}
 
-	public static String reverse(String s) {
+	public static void reverse(String s) {
 
 		StringBuilder sReverse = new StringBuilder();
 		sReverse.append(s);
 		sReverse.reverse();
-		String reverse = sReverse.toString();
-		return reverse;
+		System.out.println(sReverse);
 	}
 
 	public static void soLong(String a, String b) {
@@ -51,20 +50,19 @@ public class StringMethods {
 		}
 	}
 
-	public static String afterMath(String phrase) {
-		String mathPhrase;
+	public static void afterMath(String phrase) {
+
 		if (phrase.contains("math")) {
 			int mathIndex = phrase.indexOf("math");
-			mathPhrase = phrase.substring(mathIndex);
-		
+			String mathPhrase = phrase.substring(mathIndex);
+			System.out.println(mathPhrase);
 		} else if (phrase.contains("Math")) {
 			int mathIndex = phrase.indexOf("Math");
-			mathPhrase = phrase.substring(mathIndex);
-			
+			String mathPhrase = phrase.substring(mathIndex);
+			System.out.println(mathPhrase);
 		} else {
-			mathPhrase = "dud";
+			System.out.println("dud");
 		}
-		return mathPhrase;
 	}
 
 	public static void letterize(String word) {

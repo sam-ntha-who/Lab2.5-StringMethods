@@ -51,20 +51,19 @@ public class StringMethods {
 		}
 	}
 
-	public static String afterMath(String phrase) {
-		String mathPhrase;
+	public static void afterMath(String phrase) {
+
 		if (phrase.contains("math")) {
 			int mathIndex = phrase.indexOf("math");
-			mathPhrase = phrase.substring(mathIndex);
-		
+			String mathPhrase = phrase.substring(mathIndex);
+			System.out.println(mathPhrase);
 		} else if (phrase.contains("Math")) {
 			int mathIndex = phrase.indexOf("Math");
-			mathPhrase = phrase.substring(mathIndex);
-			
+			String mathPhrase = phrase.substring(mathIndex);
+			System.out.println(mathPhrase);
 		} else {
-			mathPhrase = "dud";
+			System.out.println("dud");
 		}
-		return mathPhrase;
 	}
 
 	public static void letterize(String word) {

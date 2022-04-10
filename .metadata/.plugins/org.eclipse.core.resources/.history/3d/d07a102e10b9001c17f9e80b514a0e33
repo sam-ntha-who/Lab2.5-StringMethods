@@ -56,11 +56,11 @@ public class StringMethods {
 		if (phrase.contains("math")) {
 			int mathIndex = phrase.indexOf("math");
 			mathPhrase = phrase.substring(mathIndex);
-		
+			System.out.println(mathPhrase);
 		} else if (phrase.contains("Math")) {
 			int mathIndex = phrase.indexOf("Math");
 			mathPhrase = phrase.substring(mathIndex);
-			
+			System.out.println(mathPhrase);
 		} else {
 			mathPhrase = "dud";
 		}

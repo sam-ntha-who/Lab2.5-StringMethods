@@ -29,8 +29,7 @@ public class StringLab {
 		// backwards words
 		System.out.println("Enter a word you would like to see backwards:");
 		String regularDegular = scnr.nextLine();
-		String backWards = StringMethods.reverse(regularDegular);
-		System.out.println(backWards);
+		StringMethods.reverse(regularDegular);
 
 		// which word is longer?
 		System.out.println("Enter a word:");
@@ -42,8 +41,7 @@ public class StringLab {
 		// after math
 		System.out.println("Give us a phrase that includes 'math':");
 		String mathPhrase = scnr.nextLine();
-		String afterMath = StringMethods.afterMath(mathPhrase);
-		System.out.println(afterMath);
+		StringMethods.afterMath(mathPhrase);
 
 		// letterize the word in an array
 		System.out.println("Enter a word:");
